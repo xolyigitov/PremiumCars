@@ -1,0 +1,150 @@
+@import '/style/fonts.css';
+
+/* root */
+:root {
+    --Lato-Italic: 'Lato-Italic';
+    --PTSans-Bold: 'PTSans-Bold';
+    --PTSans-Regular: 'PTSans-Regular';
+    --white: #FFF;
+    --black: #070707;
+    --border-bg: #E5E5E5;
+    --numbers-btn-bg: #FBF7F4;
+    --numbors-color: #545155;
+    --numbers-btn-hover: #070707;
+    --brend-blue: #4A90E2;
+    --grey-dete: #666;
+}
+
+/* root end */
+
+.famous-numbers {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center; /* Add wrapping for small screens */
+}
+
+.famous-numbers__btn,
+.famous-numbers__arrow {
+    border-radius: 3px;
+    border: 1px solid var(--border-bg);
+    width:50px;
+    height: 50px;
+    padding: 15px 24px;
+    background: var(--numbers-btn-bg);
+    color: var(--numbors-color);
+    font-family: var(--MR);
+    transition: all 500ms;
+    text-align: center; /* Center align text */
+}
+
+.famous-numbers__btn:hover,
+.famous-numbers__arrow:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+.famous-title {
+    margin-top: 60px;
+    color: var(--numbers-btn-hover);
+    font-family: var(--PTSans-Regular);
+    font-size: 30px;
+    line-height: 39px;
+    text-align: center; /* Center align title */
+}
+
+.famous-catalog {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    grid-auto-rows: 380px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.famous-item {
+    position: relative;
+}
+
+.famous-item__img {
+    border-radius: 6px;
+    width: 100%; /* Ensure image scales properly */
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.famous-item__btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 4px 12px;
+    color: var(--white);
+    font-family: var(--PR);
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 62px;
+    background: var(--brend-blue);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.famous-item__title {
+    padding: 10px;
+    margin-top: -130px;
+    color: var(--numbers-btn-hover);
+    font-family: var(--PTSans-Bold);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.famous-item__date {
+    padding: 0px 10px;
+    color: var(--grey-dete);
+    font-family: var(--PR);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .famous-catalog {
+        grid-template-columns: repeat(3, 2fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .famous-catalog {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+
+    .famous-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+
+    .famous-numbers__btn,
+    .famous-numbers__arrow {
+        width:50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .famous-catalog {
+        grid-template-columns: 2fr;
+        column-gap: 15px;
+    }
+
+    .famous-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .famous-numbers__btn,
+    .famous-numbers__arrow {
+        padding: 10px;
+    }
+}

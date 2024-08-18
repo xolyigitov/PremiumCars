@@ -1,0 +1,233 @@
+@import '/style/fonts.css';
+
+/* root */
+:root {
+    --PTSans-Italic: 'PTSans-Italic';
+    --Lato-Italic: 'Lato-Italic';
+    --PTSans-Bold: 'PTSans-Bold';
+    --PTSans-Regular: 'PTSans-Regular';
+    --white: #FFF;
+    --black: #171717;
+    --border-bg: #E5E5E5;
+    --numbers-btn-bg: #FBF7F4;
+    --numbors-color: #545155;
+    --numbers-btn-hover: #070707;
+    --brend-blue: #4A90E2;
+    --grey-dete: #666;
+    --grey-light: #999;
+    --bleck-right-btn: #232323;
+    --link-milc: #EBEBEB;
+    --input-grey:#AEB3BB;
+}
+
+/* root end */
+
+.car-right {
+    max-width: 270px;
+    width: 100%;
+}
+
+.car-rihgt__box {
+    max-width: 270px;
+}
+
+.car-right__box-two {
+    position: relative;
+}
+
+.car-box__two-img {
+    border-radius: 5px;
+}
+
+.car-box__two-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    padding: 4px 10px;
+    color: var(--white);
+    text-align: justify;
+    font-family: PT Sans;
+    font-size: 12px;
+    line-height: 16px;
+    background: var(--brend-blue);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    transition: all 500ms;
+}
+
+.car-right__img {
+    border-radius: 5px;
+}
+
+.car-right__title {
+    color: var(--black);
+    font-family: var(--PR);
+    font-size: 18px;
+    line-height: 23px;
+    padding: 20px 0 10px 0;
+}
+
+.car-right__date {
+    color: var(--grey-light);
+    font-family: var(--PR);
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 10px;
+}
+
+.car-rigt__text {
+    margin-bottom: 30px;
+    color: var(--grey-dete);
+    font-family: var(--PTSans-Regular);
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.car-right__btn {
+    padding: 15px 82px;
+    color: var(--white);
+    font-family: var(--PTSans-Regular);
+    font-size: 14px;
+    line-height: 18px;
+    width: 62px;
+    background: var(--bleck-right-btn);
+    border-radius: 5px;
+    transition: all 500ms;
+}
+
+.car-title {
+    margin-top: 100px;
+    color: var(--black);
+    font-family: var(--PTSans-Bold);
+    font-size: 18px;
+    line-height: 23px;
+}
+
+
+
+.car-box__two-info {
+    margin-top: 20px;
+    color: var(--black);
+    font-family: var(--PTSans-Bold);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.car-box__two-date {
+    margin-top: 10px;
+    color: var(--grey-dete);
+    font-family: var(--PTSans-Regular);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.car-insta__title {
+    margin: 70px 0 50px 0;
+    color: var(--black);
+    font-family: var(--PR);
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.car-insta__img {
+    border-radius: 5px;
+}
+
+.car-insta__btn {
+    display: flex;
+    padding: 15px 55px;
+    color: var(--white);
+    font-family: var(--PB);
+    font-size: 14px;
+    line-height: 18px;
+    background: var(--bleck-right-btn);
+    border-radius: 5px;
+}
+
+.car-right__box-five {
+    margin-top: 60px;
+}
+
+.car-tags {
+    margin-bottom: 50px;
+    color: var(--black);
+    font-family: var(--PTSans-Bold);
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.car-tags__link {
+    padding: 7px 16px 5px 16px;
+    color: var(--black);
+    font-family: var(--PTSans-Regular);
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 3px;
+    background: var(--link-milc);
+    display: block;
+}
+
+.car-tags__list {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*********** */
+
+.car-right__sign {
+    margin-top: 80px;
+}
+
+.car-sign__title {
+    margin-bottom: 30px;
+    color: var(--black);
+    font-family: var(--PTSans-Bold);
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.car-sign__dete {
+    margin-bottom: 25px;
+    color: var(--grey-dete);
+    font-family: var(--PTSans-Regular);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.car-sign__input {
+    color:var(--input-grey);
+    font-family: var(--PTSans-Regular);
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 270px;
+    width: 100%;
+    padding: 17px 15px 15px;
+}
+
+.car-sign__email {
+    color: var(--input-grey);
+    font-family: var(--PTSans-Regular);
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+    max-width: 270px;
+    width: 100%;
+    padding: 17px 15px 15px;
+    margin-bottom: 30px;
+}
+
+.car-sign__btn {
+    padding: 15px 64px;
+    color: var(--white);
+    font-family: var(--PTSans-Bold);
+    font-size: 14px;
+    line-height: 18px;
+    width: 62px;
+    background: var(--bleck-right-btn);
+    border-radius: 5px;
+    transition: all 500ms;
+
+}

@@ -1,0 +1,23 @@
+@import '/style/fonts.css';
+
+/* root */
+:root {
+    --LI: 'Lato-Italic';
+    --PB: 'PTSans-Bold';
+    --PR: 'PTSans-Regular';
+    --white: #FFF;
+}
+
+/* root end */
+
+
+
+
+.populor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
